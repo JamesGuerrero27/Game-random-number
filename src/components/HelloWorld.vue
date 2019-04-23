@@ -34,7 +34,7 @@
 
     <form class="border p-5 w-50 rounded" v-if="view == 'guessTheNumber'" >
       <div class="form-group">
-        <h5 class="mb-5">¿Qué número estoy pensando?</h5>
+        <h5 class="mb-5">¿Adivina qué número estoy pensando?</h5>
         <input type="number"  v-model="numberEnteredByTheUser" class="form-control" placeholder="Ingresa número" required>
       </div>
       <div class="form-group form-check">
@@ -50,7 +50,7 @@
 
 <script>
 export default {
-  name: 'guessTheNumber',
+  el: 'guessTheNumber',
   data () {
     return {
       view: 'doYouWantToPlay',
